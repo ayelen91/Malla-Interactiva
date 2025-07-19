@@ -4,15 +4,38 @@
   <meta charset="UTF-8">
   <title>Malla Interactiva</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Iconos -->
 </head>
 <body>
-  <h1>Malla Interactiva - Carrera de Diseño</h1>
-  <div class="grid">
-    <div class="curso" onclick="mostrarInfo('Diseño I')">Diseño I</div>
-    <div class="curso" onclick="mostrarInfo('Historia del Arte')">Historia del Arte</div>
-    <div class="curso" onclick="mostrarInfo('Taller Tipográfico')">Taller Tipográfico</div>
+  <h1>Malla Interactiva - Diseño Gráfico</h1>
+
+  <div class="nivel" id="año1">
+    <h2>🟡 Año 1</h2>
+    <div class="grid">
+      <div class="curso diseño" onclick="mostrarInfo('Diseño I')">
+        <i class="fas fa-pencil-ruler"></i> Diseño I
+      </div>
+      <div class="curso teoria" onclick="mostrarInfo('Historia del Arte')">
+        <i class="fas fa-landmark"></i> Historia del Arte
+      </div>
+      <div class="curso tecnica" onclick="mostrarInfo('Taller Tipográfico')">
+        <i class="fas fa-font"></i> Taller Tipográfico
+      </div>
+    </div>
   </div>
+
+  <div class="nivel" id="año2">
+    <h2>🔵 Año 2</h2>
+    <div class="grid">
+      <div class="curso diseño" onclick="mostrarInfo('Diseño II')">
+        <i class="fas fa-pen-nib"></i> Diseño II
+      </div>
+      <div class="curso tecnica" onclick="mostrarInfo('Fotografía Digital')">
+        <i class="fas fa-camera-retro"></i> Fotografía Digital
+      </div>
+    </div>
+  </div>
+
   <div id="info" class="info-box"></div>
-  <script src="script.js"></script>
-</body>
-</html>
+
+  <script src="script.
