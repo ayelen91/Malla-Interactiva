@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+.curso {
+  background: #ffd400;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.curso:hover {
+  transform: scale(1.05);
+}
+.info-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  display: none;
+}
