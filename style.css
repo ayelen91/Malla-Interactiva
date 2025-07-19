@@ -1,30 +1,65 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
   padding: 20px;
-  background: #f9f9f9;
+  background: #f4f4f4;
+  color: #333;
 }
+
+h1 {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin: 20px 0;
+  color: #555;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
-  margin-top: 30px;
+  margin-bottom: 40px;
 }
+
 .curso {
-  background: #ffd400;
   padding: 20px;
   border-radius: 12px;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease-in-out;
 }
+
 .curso:hover {
   transform: scale(1.05);
+  opacity: 0.9;
 }
+
+.diseño {
+  background-color: #FF7043;
+}
+
+.teoria {
+  background-color: #42A5F5;
+}
+
+.tecnica {
+  background-color: #66BB6A;
+}
+
 .info-box {
-  margin-top: 30px;
-  padding: 20px;
+  padding: 25px;
   background: white;
   border: 2px solid #ccc;
   border-radius: 12px;
+  max-width: 700px;
+  margin: 30px auto;
   display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
