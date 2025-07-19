@@ -87,3 +87,4 @@ function mostrarInfo(nombre, tipo) {
   info.style.display = "block";
 }
 
+
